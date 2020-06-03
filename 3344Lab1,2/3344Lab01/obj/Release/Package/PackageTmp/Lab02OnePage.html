@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>A Trip To Europe</title>
+    <link rel="stylesheet" href="OnePageStyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="http://cis-iis2.temple.edu/Spring2020/CIS3344_tuh37850/index.html">Lab 01 Website</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#photo-gallery">Photo Gallery</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="main">
+        <h1 id="main-header">A Trip to Europe</h1>
+        <p id="main-paragraph">a website to share a little bit about my trip to various places in europe</p>
+
+    </div>
+
+    <div id="information">
+        <div class="section">
+
+            <h1>Amsterdam</h1>
+            <img src="images/amsterdam.jpg" alt="amsterdam" class="image" />
+            <p>The city of Amsterdam is an amazing place. From the beautiful architecture, to the delicious pancakes that are more like crepes, to the Red Light District, it has it all. We only had the opportunity to spend a day and a half here,
+             and I feel like we barely scratched the surface of all there is to do.</p>
+
+        </div>
+
+        <div class="section">
+
+            <h1>Rome</h1>
+            <img src="images/rome1.jpg" alt="rome" class="image" />
+            <p>My girlfriend and I stayed in Rome, Italy for 6 weeks attending Temple's Study Abroad program. It was an incredible experience and I will never forget it. The city was entrancing, the food was incredible, and the coffee
+            , especially the cappucino and ginsend, was the best I've had. I hope to one day return.</p>
+
+        </div>
+
+        <div class="section">
+
+            <h1>Venice</h1>
+            <img src="images/venice.jpg" alt="venice" class="image" />
+            <p>This was my girlfriend's favorite place in Italy. The winding rivers throughout the city are like nothing I've ever seen before. The overall atmosphere of Venice was whimsical. We only had the chance to spend one day here so I hope I can return
+             some day and get the full Venetian experience.</p>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div id="form">
+        <form id="form1" method="post" action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuh37850@temple.edu" q>
+            <h1 id="formmainheading">User Survey</h1>
+            <div class="input">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br />
+            </div>
+
+            <h2 class="formheading">Have you ever been to Europe?</h2>
+
+            <div class="input">
+                <input type="radio" id="yes" name="answer" value="yes" />
+                <label for="yes">Yes</label><br />
+                <input type="radio" id="no" name="answer" value="no" />
+                <label for="no">No</label><br />
+            </div>
+            <h2 class="formheading">What country would you most like to travel to?</h2>
+            <div class="input">
+                <select class="selectinput" name="country">
+                    <option value="Italy">Italy</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                </select><br /><br />
+            </div>
+            <h2 class="formheading">What are you most interested in when travelling? Ex: Food, views, culture.</h2>
+            <div class="input">
+                <input type="text" id="food" name="food" /><br />
+            </div>
+            <h2 class="formheading">What are some of your biggest concerns in regards to international travel</h2>
+            <div class="input">
+                <input type="checkbox" id="worry1" name="worry1" value="Safety">
+                <label for="worry1"> Safety</label><br>
+                <input type="checkbox" id="worry2" name="worry2" value="Cost">
+                <label for="worry2"> Cost of Travel</label><br>
+                <input type="checkbox" id="worry3" name="worry3" value="Homesick">
+                <label for="worry3"> Homesickness</label><br>
+                <input type="checkbox" id="worry4" name="worry4" value="Flying">
+                <label for="worry4"> Fear of Airplanes</label><br>
+                <input type="checkbox" id="worry5" name="worry5" value="Language Barrier">
+                <label for="worry5"> Lanuage Barrier</label><br>
+                <input type="checkbox" id="worry6" name="worry6" value="Cultural Differences">
+                <label for="worry6"> Cultural Differences</label><br>
+            </div>
+            <h2 class="formheading">Rate my website!</h2>
+
+            <div class="input">
+                <label for="style">Style and Appearance:</label><br>
+                <select class="selectinput" name="stylerating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br />
+                <label for="functionality">Functionality:</label><br>
+                <select class="selectinput" name="functionalityrating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br />
+                <label for="content">Content:</label><br>
+                <select class="selectinput" name="contentrating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br />
+            </div>
+            <br /><br />
+            <div id="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div id="photo-gallery">
+        <h1>Photo Gallery</h1>
+        <div class="photogallery">
+            <img src="images/amalfi.jpg" alt="amalfi" class="image" />
+            <p>The Amalfi Coast</p>
+        </div>
+
+        <div class="photogallery">
+            <img src="images/fountains.jpg" alt="fountains" class="image"/>
+            <p>Fountain in Piazza Navona, Rome</p>
+        </div>
+        <div class="photogallery">
+            <img src="images/anacapri.jpeg" alt="anacapri" id="anacapri" />
+            <p>Statue on the peak of a mountain in Anacapri</p>
+        </div>
+        <div class="photogallery">
+            <img src="images/amsterdam1.jpeg" alt="amsterdam1" class="image"/>
+            <p>Beautiful Amsterdam</p>
+        </div>
+        <div class="photogallery">
+            <img src="images/todi.jpeg" alt="todi" class="image"/>
+            <p>Todi, Central Italy</p>
+        </div>
+        <div class="photogallery">
+            <img src="images/florence.jpeg" alt="florence" class="image"/>
+            <p>Florence Cathedral</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <p>Ryan Lydzinski CIS 3344 2020      Email: tuh37850@temple.edu</p>
+    </div>
+
+</body>
+</html>
